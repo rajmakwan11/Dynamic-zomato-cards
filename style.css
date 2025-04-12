@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fbeeee;
+    overflow-x: hidden;
+  }
+  
+
+.header-container {
+    width: 100%;
+    padding: 20px 5vw;
+  }
+  
+  /* Top Bar */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    flex-shrink: 0;
+  }
+  
+  .search-bar {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 50%; /* Fixed compact width */
+    flex-shrink: 0;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  
+  .auth-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  /* Navigation Categories */
+  .nav-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .nav-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .nav-item span {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-bar {
+      width: 200px; /* stays same even on small screens */
+    }
+  
+    .auth-buttons {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .nav-categories {
+      gap: 20px;
+    }
+  }
+  
+
+/* COLLECTIONS */
+.collections {
+    background-color: #eeeeee;
+    padding: 50px 20px;
+  }
+  
+  .collections-header {
+    max-width: 900px;
+    margin-bottom: 40px;
+    text-align: left; /* aligns to the left */
+    /* margin-left: 2rem; */
+  }
+  
+  .collections-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .collections-header p {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 0;
+  }
+  
+  /* Grid for cards */
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  /* Card styles */
+  .collection-card {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    cursor: pointer;
+  }
+  
+  .collection-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  
+  
+  .collection-card h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Hover effect */
+  .collection-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  
+.hero-image{
+    height: auto;
+    width: 85vw;
+    position: relative;
+    right:25px;
+
+}
+
+.hero-image-div{
+    margin-left:10vw;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.option-buttons{
+    padding:10px;
+    margin-left:20px;
+    background-color: rgb(249, 237, 237);
+    border-radius: 10px;
+    border:1px solid gray;
+    color:gray;
+    margin: 0.4rem;
+}
+
+button:hover{
+    color:red;
+    border-bottom:2px solid red;
+}
+
+
+.options{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left:7vw;
+    position: sticky;
+    top:0;
+    background-color: rgb(249, 237, 237);
+    padding:20px;
+    z-index:20;    
+}
+
+
+
+/* CARDS  */
+
+#root{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin-top: 1rem;  
+}
+
+img{
+    width: 100%;
+    border-radius: 1rem;
+    height: 60%;
+
+}
+
+.card{
+    width:20rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-rating{
+    border: 2px solid black;
+    padding: 0.5rem;
+    background-color: rgb(120, 120, 201);
+    border-radius: 0.4em;
+    color: white;
+    font-weight: bold;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-location{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.res-name{
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width:315px) {
+    img{
+        height: auto;
+    }
+}
+
+/* FILTER FORM  */
+
+#filterPopup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.filterOption {
+    margin: 10px 0;
+}
+
+.filter-apply-close {
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.filter-apply-close:hover {
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width:500px) {
+    #filterPopup{
+        text-align: center;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* Style for the hamburger toggle button */
+.hamburger-toggle {
+    display: none; /* hidden by default for desktop */
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    /* position: fixed; */
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Mobile specific changes */
+@media (max-width: 600px) {
+
+    .hamburger-toggle {
+        display: block; /* show hamburger on mobile */
+    }
+
+    .options {
+        display: none; /* hide filters by default */
+     
+        
+    }
+
+    .options.show {
+        display: flex; /* show on toggle */
+    }
+}
+
+
+@media (min-width:1220px) {
+    .collections-header{
+        margin-left: 3rem;
+    }
+}
+
+  /* Example card styles */

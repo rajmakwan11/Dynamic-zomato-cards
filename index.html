@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <s><link rel="stylesheet" href="style.css"></s>
+</head>
+<body>
+
+        <!-- HEADER  -->
+   
+  <div class="header-container">
+    <!-- Top Row -->
+    <div class="top-bar">
+      <div class="logo">zomato</div>
+      <input type="text" class="search-bar" placeholder="🔍 Search for restaurant">
+      <div class="auth-buttons">
+        <button class="auth-btn">Login</button>
+        <button class="auth-btn">Sign up</button>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="nav-categories">
+      <div class="nav-item">
+        <img src="https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png?output-format=webp" alt="Dining Out">
+        <span>Dining Out</span>
+      </div>
+      <div class="nav-item">
+        <img src="https://b.zmtcdn.com/data/o2_assets/246bbd71fbba420d5996452be3024d351616150055.png?output-format=webp" alt="Delivery">
+        <span>Delivery</span>
+      </div>
+      <div class="nav-item">
+        <img src="https://b.zmtcdn.com/data/o2_assets/855687dc64a5e06d737dae45b7f6a13b1616149818.png" alt="Nightlife">
+        <span>Nightlife</span>
+      </div>
+    </div>
+  </div>    
+
+  <!-- COLLECTIONS  -->
+
+  <section class="collections">
+    <div class="collections-header">
+      <h2>Collections</h2>
+      <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+    </div>
+  
+    <div class="collection-grid">
+      <div class="collection-card">
+        <img src="https://b.zmtcdn.com/data/collections/1f67f2b70d40edee29f374c64a6a4c64_1709810208.png" alt="Top Trending Spots">
+        <h4>Top Trending Spots</h4>
+      </div>
+      <div class="collection-card">
+        <img src="https://b.zmtcdn.com/data/collections/eb6bfce40f7b9c811b1bb127d3618097_1709810917.png" alt="Best Insta-Worthy Places">
+        <h4>Best Insta–Worthy Places</h4>
+      </div>
+      <div class="collection-card">
+        <img src="https://b.zmtcdn.com/data/collections/edd5abbddd239a8cfb8099c63b1baaf0_1675247359.jpg" alt="Romantic Dining Places">
+        <h4>Romantic Dining Places</h4>
+      </div>
+      <div class="collection-card">
+        <img src="https://b.zmtcdn.com/data/pictures/2/20626392/e6d7a000cb05f443be3256e1b6f0cb4e_featured_v2.jpg" alt="Ministry Of Bar">
+        <h4>Ministry Of Bar</h4>
+      </div>
+    </div>
+  </section>
+  
+  <div class="hero-image-div">
+    <img src="https://b.zmtcdn.com/data/o2_assets/e067a1cf0d3fe27b366402b98b994e9f1716296909.png" alt="" class="hero-image">
+</div>
+
+    <button class="hamburger-toggle">☰</button>
+
+    <div class="options">
+
+        <div class="offers-div box hero-options">
+
+            <button class="offers option-buttons" id="all-filter">ALL</button>
+
+        </div>
+
+        <div class="filters-div box hero-options">
+
+            <button class="filters option-buttons" id="filter">☰ Filters</button>
+
+        </div>
+        
+        <div class="rating-div box hero-options">
+
+            <button class="Rating option-buttons" id="rating-filter">⭐ Rating 4.5+</button>
+
+        </div>
+        <div class="pet-friendly-div box hero-options">
+
+            <button class="pet-friendly option-buttons" id="pet-friendly-filter">🐾 Pet-Friendly</button>
+
+        </div>
+        <div class="outdoor-seating-div box hero-options">
+
+            <button class="outdoor-seating option-buttons" id="outdoor-seating-filter">🏞  Outdoor-Seating</button>
+
+        </div>
+        <div class="serves-drink-div box hero-options">
+
+            <button class="serves-drink option-buttons" id="alcohol-rating-filter">🍹 Serves Drink</button>
+
+        </div>
+        <div class="open-now-div box hero-options">
+
+            <button class="open-now option-buttons" id="open-filter">🍽️ Open Now</button>
+
+        </div>
+
+    </div>
+
+    <div id="filterPopup" class="hidden">
+        <h3>Choose Filter</h3>
+        <div class="filterOption">
+            <input type="radio" id="sortByRating" name="filterOption" value="rating">
+            <label for="sortByRating">Sort by Rating</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="sortHighToLow" name="filterOption" value="highLow">
+            <label for="sortHighToLow">High to Low (Price)</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="costOption" name="filterOption" value="costLowHigh">
+            <label for="costOption">Cost: Low to High</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" id="distanceOption" name="filterOption" value="distance">
+            <label for="distanceOption">Distance</label>
+        </div>
+        <button id="applyFilter" class="filter-apply-close">Apply</button>
+        <button id="closeFilter" class="filter-apply-close">Close</button>
+    </div>
+
+    
+
+    
+    <div id="root">
+    </div> <!--ROOT ENDING  -->
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
